@@ -1,0 +1,160 @@
+
+Hannah10_IQ_FillerTrain.js
+==========================
+  [done]    breaks: two 30-second breaks at 1/3 and 2/3 of the training + test trials
+  [n/a]     block order: unchanged for IQ (training, then test)
+  [note]    training block: rshuffle("filler_training")
+  [note]    test block:     randomizeNoMoreThan(anyOf("IQ_ambig", "IQ_unamb", "filler_test"),2)
+  [done]    break items: break1 and break2 added to the items array
+  [note]    trials per participant: 96 (IQ 24, filler_test 24, filler_training 48); breaks after trial 32 and 64
+  [done]    p6 (practice): question "in a storm, is the boat wind-propelled?" -> "should the sails be left loose during a storm?"
+  [note]      reason: A sailboat is wind-propelled by category; the new question is answered by the sentence. Key stays NO.
+  [n/a]     SC_ambig_training 3: item not in this experiment
+  [done]    filler_training 104: question "was the girl caught staying out late?" -> "did the girl stay out past curfew?"
+  [note]      reason: Being caught is not entailed. Key stays YES.
+  [done]    filler_training 107: question "did people bike on the sidewalks?" -> "were bikes permitted on the town's sidewalks?"; key YES -> NO
+  [note]      reason: A rule does not entail behavior and the key differed between versions. New question is entailed; key is NO everywhere.
+  [done]    SC_unamb 32 / IQ_unamb 32: question "was the mayor hired by someone?" -> "was the mayor overseen by someone?"; sentence "city_council who was hired by the mayor" -> "city_council that was overseen by the mayor"
+  [note]      reason: 'who' for a council, and a mayor hiring a council is implausible. Key stays NO. Note: item 31 still uses 'hired'.
+  [done]    SC_unamb 40 / IQ_unamb 40: sentence "puppy who was carried" -> "puppy that was carried"
+  [note]      reason: 'who' for a non-human.
+  [done]    filler_test 50: question "did the driver overtake all the trucks?" -> "did the driver overtake the last truck?"; sentence "inside lane" -> "right lane"
+  [note]      reason: 'All the trucks' was an inference; 'inside lane' is British usage. Key stays YES.
+  [done]    filler_test 61: question "did the brother like to share?" -> "did the brother give the toy to his younger sister?"
+  [note]      reason: The old question asked about a disposition. Key stays NO.
+  [done]    filler_test 67: question "was the seat made of leather?" -> "did Judy enjoy the smell of leather?"
+  [note]      reason: The smell need not come from the seat. Key stays YES.
+  [done]    filler_training 85: question "did foreigners like the place?" -> "do foreigners like Paris?"; sentence "with the place" -> "with Paris"
+  [note]      reason: 'The place' had no antecedent and the tenses did not match. Key stays YES.
+  [done]    filler_training 92: question "did the patient have food poisoning?" -> "was the doctor right about the symptoms?"
+  [note]      reason: 'The patient' is never introduced. Key stays NO.
+  [done]    filler_training 94: question "was Andrew passionate about the idea?" -> "did Andrew think about the new idea?"
+  [note]      reason: The old question required interpreting a metaphor. Key stays YES.
+  [done]    filler_training 98: question "did the man get the woman's phone number?" -> "did the man add the woman's contact information to his phone?"
+  [note]      reason: Contact information is not necessarily a phone number. Key stays YES.
+  [done]    filler_training 79 typo: "putting the children bed" -> "putting the children to bed" (1 place)
+  [done]    filler_test 65 spelling: "good bye" -> "goodbye" (2 places)
+  [done]    trailing spaces removed from 11 question strings
+  [note]    underscore-joined tokens left unchanged; check in the preview that they display as two words in one region.
+  [note]    no HTML files supplied with this input: the consent, intro and debrief wording fixes were not applied.
+  [note]    written to out/Hannah11_IQ_FillerTrain20261116 (and Hannah11_IQ_FillerTrain20261116.zip)
+
+Hannah10_IQ_RCtrain.js
+======================
+  [done]    breaks: two 30-second breaks at 1/3 and 2/3 of the training + test trials
+  [n/a]     block order: unchanged for IQ (training, then test)
+  [note]    training block: randomizeNoMoreThan(anyOf("IQ_ambig_training", "filler_training"),2)
+  [note]    test block:     randomizeNoMoreThan(anyOf("IQ_ambig", "IQ_unamb", "filler_test"),2)
+  [done]    break items: break1 and break2 added to the items array
+  [note]    trials per participant: 96 (IQ 24, IQ_ambig_training 24, filler_test 24, filler_training 24); breaks after trial 32 and 64
+  [done]    p6 (practice): question "in a storm, is the boat wind-propelled?" -> "should the sails be left loose during a storm?"
+  [note]      reason: A sailboat is wind-propelled by category; the new question is answered by the sentence. Key stays NO.
+  [n/a]     SC_ambig_training 3: item not in this experiment
+  [n/a]     filler_training 104: item not in this experiment
+  [n/a]     filler_training 107: item not in this experiment
+  [done]    SC_unamb 32 / IQ_unamb 32: question "was the mayor hired by someone?" -> "was the mayor overseen by someone?"; sentence "city_council who was hired by the mayor" -> "city_council that was overseen by the mayor"
+  [note]      reason: 'who' for a council, and a mayor hiring a council is implausible. Key stays NO. Note: item 31 still uses 'hired'.
+  [done]    SC_unamb 40 / IQ_unamb 40: sentence "puppy who was carried" -> "puppy that was carried"
+  [note]      reason: 'who' for a non-human.
+  [done]    filler_test 50: question "did the driver overtake all the trucks?" -> "did the driver overtake the last truck?"; sentence "inside lane" -> "right lane"
+  [note]      reason: 'All the trucks' was an inference; 'inside lane' is British usage. Key stays YES.
+  [done]    filler_test 61: question "did the brother like to share?" -> "did the brother give the toy to his younger sister?"
+  [note]      reason: The old question asked about a disposition. Key stays NO.
+  [done]    filler_test 67: question "was the seat made of leather?" -> "did Judy enjoy the smell of leather?"
+  [note]      reason: The smell need not come from the seat. Key stays YES.
+  [done]    filler_training 85: question "did foreigners like the place?" -> "do foreigners like Paris?"; sentence "with the place" -> "with Paris"
+  [note]      reason: 'The place' had no antecedent and the tenses did not match. Key stays YES.
+  [done]    filler_training 92: question "did the patient have food poisoning?" -> "was the doctor right about the symptoms?"
+  [note]      reason: 'The patient' is never introduced. Key stays NO.
+  [done]    filler_training 94: question "was Andrew passionate about the idea?" -> "did Andrew think about the new idea?"
+  [note]      reason: The old question required interpreting a metaphor. Key stays YES.
+  [n/a]     filler_training 98: item not in this experiment
+  [done]    filler_training 79 typo: "putting the children bed" -> "putting the children to bed" (1 place)
+  [done]    filler_test 65 spelling: "good bye" -> "goodbye" (2 places)
+  [n/a]     no question strings with trailing spaces
+  [note]    underscore-joined tokens left unchanged; check in the preview that they display as two words in one region.
+  [note]    no HTML files supplied with this input: the consent, intro and debrief wording fixes were not applied.
+  [note]    written to out/Hannah11_IQ_RCtrain20261116 (and Hannah11_IQ_RCtrain20261116.zip)
+
+Hannah10_SC_FillerTrain.js
+==========================
+  [done]    breaks: two 30-second breaks at 1/3 and 2/3 of the training + test trials
+  [done]    block order: test block now runs before the training block
+  [note]    training block: rshuffle("filler_training")
+  [note]    test block:     randomizeNoMoreThan(anyOf("SC_ambig", "SC_unamb", "filler_test"),2)
+  [done]    break items: break1 and break2 added to the items array
+  [note]    trials per participant: 96 (SC 24, filler_test 24, filler_training 48); breaks after trial 32 and 64
+  [done]    p6 (practice): question "in a storm, is the boat wind-propelled?" -> "should the sails be left loose during a storm?"
+  [note]      reason: A sailboat is wind-propelled by category; the new question is answered by the sentence. Key stays NO.
+  [done]    SC_ambig_training 3: sentence "had mounted a counter offensive" -> "had called for reinforcements"
+  [note]      reason: A counter offensive is an attack on the terrorists, which made YES defensible. Question and key (NO) are unchanged.
+  [done]    filler_training 104: question "was the girl caught staying out late?" -> "did the girl stay out past curfew?"
+  [note]      reason: Being caught is not entailed. Key stays YES.
+  [done]    filler_training 107: question "did people bike on the sidewalks?" -> "were bikes permitted on the town's sidewalks?"; key already NO
+  [note]      reason: A rule does not entail behavior and the key differed between versions. New question is entailed; key is NO everywhere.
+  [done]    SC_unamb 32 / IQ_unamb 32: question "was the mayor hired by someone?" -> "was the mayor overseen by someone?"; sentence "city_council who was hired by the mayor" -> "city_council that was overseen by the mayor"
+  [note]      reason: 'who' for a council, and a mayor hiring a council is implausible. Key stays NO. Note: item 31 still uses 'hired'.
+  [done]    SC_unamb 40 / IQ_unamb 40: sentence "puppy who was carried" -> "puppy that was carried"
+  [note]      reason: 'who' for a non-human.
+  [done]    filler_test 50: question "did the driver overtake all the trucks?" -> "did the driver overtake the last truck?"; sentence "inside lane" -> "right lane"
+  [note]      reason: 'All the trucks' was an inference; 'inside lane' is British usage. Key stays YES.
+  [done]    filler_test 61: question "did the brother like to share?" -> "did the brother give the toy to his younger sister?"
+  [note]      reason: The old question asked about a disposition. Key stays NO.
+  [done]    filler_test 67: question "was the seat made of leather?" -> "did Judy enjoy the smell of leather?"
+  [note]      reason: The smell need not come from the seat. Key stays YES.
+  [done]    filler_training 85: question "did foreigners like the place?" -> "do foreigners like Paris?"; sentence "with the place" -> "with Paris"
+  [note]      reason: 'The place' had no antecedent and the tenses did not match. Key stays YES.
+  [done]    filler_training 92: question "did the patient have food poisoning?" -> "was the doctor right about the symptoms?"
+  [note]      reason: 'The patient' is never introduced. Key stays NO.
+  [done]    filler_training 94: question "was Andrew passionate about the idea?" -> "did Andrew think about the new idea?"
+  [note]      reason: The old question required interpreting a metaphor. Key stays YES.
+  [done]    filler_training 98: question "did the man get the woman's phone number?" -> "did the man add the woman's contact information to his phone?"
+  [note]      reason: Contact information is not necessarily a phone number. Key stays YES.
+  [done]    filler_training 79 typo: "putting the children bed" -> "putting the children to bed" (1 place)
+  [done]    filler_test 65 spelling: "good bye" -> "goodbye" (2 places)
+  [done]    trailing spaces removed from 11 question strings
+  [note]    underscore-joined tokens left unchanged; check in the preview that they display as two words in one region.
+  [note]    no HTML files supplied with this input: the consent, intro and debrief wording fixes were not applied.
+  [note]    written to out/Hannah11_SC_FillerTrain20261116 (and Hannah11_SC_FillerTrain20261116.zip)
+
+Hannah10_SC_RCtrain.js
+======================
+  [done]    breaks: two 30-second breaks at 1/3 and 2/3 of the training + test trials
+  [done]    block order: test block now runs before the training block
+  [note]    training block: randomizeNoMoreThan(anyOf("SC_ambig_training", "filler_training"),2)
+  [note]    test block:     randomizeNoMoreThan(anyOf("SC_ambig", "SC_unamb", "filler_test"),2)
+  [done]    break items: break1 and break2 added to the items array
+  [note]    trials per participant: 96 (SC 24, SC_ambig_training 24, filler_test 24, filler_training 24); breaks after trial 32 and 64
+  [done]    p6 (practice): question "in a storm, is the boat wind-propelled?" -> "should the sails be left loose during a storm?"
+  [note]      reason: A sailboat is wind-propelled by category; the new question is answered by the sentence. Key stays NO.
+  [done]    SC_ambig_training 3: sentence "had mounted a counter offensive" -> "had called for reinforcements"
+  [note]      reason: A counter offensive is an attack on the terrorists, which made YES defensible. Question and key (NO) are unchanged.
+  [n/a]     filler_training 104: item not in this experiment
+  [n/a]     filler_training 107: item not in this experiment
+  [done]    SC_unamb 32 / IQ_unamb 32: question "was the mayor hired by someone?" -> "was the mayor overseen by someone?"; sentence "city_council who was hired by the mayor" -> "city_council that was overseen by the mayor"
+  [note]      reason: 'who' for a council, and a mayor hiring a council is implausible. Key stays NO. Note: item 31 still uses 'hired'.
+  [done]    SC_unamb 40 / IQ_unamb 40: sentence "puppy who was carried" -> "puppy that was carried"
+  [note]      reason: 'who' for a non-human.
+  [done]    filler_test 50: question "did the driver overtake all the trucks?" -> "did the driver overtake the last truck?"; sentence "inside lane" -> "right lane"
+  [note]      reason: 'All the trucks' was an inference; 'inside lane' is British usage. Key stays YES.
+  [done]    filler_test 61: question "did the brother like to share?" -> "did the brother give the toy to his younger sister?"
+  [note]      reason: The old question asked about a disposition. Key stays NO.
+  [done]    filler_test 67: question "was the seat made of leather?" -> "did Judy enjoy the smell of leather?"
+  [note]      reason: The smell need not come from the seat. Key stays YES.
+  [done]    filler_training 85: question "did foreigners like the place?" -> "do foreigners like Paris?"; sentence "with the place" -> "with Paris"
+  [note]      reason: 'The place' had no antecedent and the tenses did not match. Key stays YES.
+  [done]    filler_training 92: question "did the patient have food poisoning?" -> "was the doctor right about the symptoms?"
+  [note]      reason: 'The patient' is never introduced. Key stays NO.
+  [done]    filler_training 94: question "was Andrew passionate about the idea?" -> "did Andrew think about the new idea?"
+  [note]      reason: The old question required interpreting a metaphor. Key stays YES.
+  [n/a]     filler_training 98: item not in this experiment
+  [done]    filler_training 79 typo: "putting the children bed" -> "putting the children to bed" (1 place)
+  [done]    filler_test 65 spelling: "good bye" -> "goodbye" (2 places)
+  [n/a]     no question strings with trailing spaces
+  [note]    underscore-joined tokens left unchanged; check in the preview that they display as two words in one region.
+  [note]    no HTML files supplied with this input: the consent, intro and debrief wording fixes were not applied.
+  [note]    written to out/Hannah11_SC_RCtrain20261116 (and Hannah11_SC_RCtrain20261116.zip)
+
+Summary
+=======
+  [note]    4 built, 0 failed, 0 changes could not be applied
